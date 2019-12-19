@@ -11,6 +11,9 @@ const viewsPath = path.join(__dirname, '../templates/views');
 app.set('view engine', 'hbs'); //Telling express/NODE to use handlebars for templates
 app.set('views', viewsPath); //Telling express to get templates from templates/views folder
 hbs.registerPartials(partialsPath);
+//set up our static asset directory(gimme that css)
+app.use(express.static(publicDirectoryPath));
+
 
 app.get('', async(req,res) =>{
     try{
