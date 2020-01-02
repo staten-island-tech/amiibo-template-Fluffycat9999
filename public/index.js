@@ -50,3 +50,4 @@ app.listen(3000, () => {
     console.log(__dirname);
 });
 //http://127.0.0.1:3000/
+//then write in terminal npm run dev

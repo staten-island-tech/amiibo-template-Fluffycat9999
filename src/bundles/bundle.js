@@ -10,6 +10,8 @@ elements.amiiboForm.addEventListener('keypress', function(event){
 function search(){
     elements.amiiboForm.addEventListener('submit', async function(e){
         e.preventDefault();
-        const amiiboURL = '';
+        const amiiboURL = `https://www.amiiboapi.com/api/amiibo/?character=${elements.amiiboName.value}`;
     });
 }
+
+//Thami sucks
